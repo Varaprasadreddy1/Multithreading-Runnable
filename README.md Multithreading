@@ -1,0 +1,14 @@
+# Multithreading-Runnable
+import java.util.*;
+public class ExerciseThread implements Runnable {
+ public static void main(String[] args) {
+   Thread t1 = new Thread("Thread A");
+   Thread t2 = new Thread("Thread B");
+   t1.start(); // Thread started
+   t2.start(); // Thread started
+   System.out.println("Thread names are following:");
+   System.out.println(t1.getName());
+   System.out.println(t2.getName());
+ }
+ public void run() {}
+}
